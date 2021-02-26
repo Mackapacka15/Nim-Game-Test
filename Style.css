@@ -1,0 +1,214 @@
+body {
+  display: grid;
+  grid-template-columns: 15% 1fr 15%;
+  grid-template-rows: 15% 1fr 15%;
+  background-color: rgb(112, 218, 135);
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+header {
+  text-align: center;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+header h1 {
+  font-size: 50px;
+}
+
+.menu {
+  border-radius: 90px;
+  background-color: #242582;
+  grid-area: 2/2/3/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.Menu-Text {
+  grid-area: 1/1/2/3;
+  display: flex;
+}
+.Menu-Text p {
+  margin: auto;
+  margin-top: 10%;
+  text-align: center;
+  width: 45ch;
+  font-family: "Sriracha", cursive;
+  font-size: 3vh;
+  color: wheat;
+}
+.Button-Rules {
+  text-align: center;
+  grid-area: 2/1/2/2;
+  background-color: #f64c72;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 20%;
+}
+.Button-Menu {
+  text-align: center;
+  grid-area: 1/2/2/2;
+  background-color: #f64c72;
+  border-radius: 25px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 10%;
+  font-size: 100px;
+  width: 50%;
+}
+.Button-Play {
+  text-align: center;
+  grid-area: 2/2/2/3;
+  background-color: #f64c72;
+  border-radius: 25px;
+  padding: 20px;
+  font-size: 100px;
+  margin: 20%;
+}
+.menu button {
+  background: transparent;
+  border: 0;
+  font-family: "Sriracha", cursive;
+  font-size: 5vh;
+  color: wheat;
+}
+.rules {
+  border-radius: 90px;
+  font-family: "Sriracha", cursive;
+  font-size: 50px;
+  color: wheat;
+  background-color: #242582;
+  grid-area: 2/2/3/3;
+  text-align: center;
+}
+.rules button {
+  background: transparent;
+  border: 0;
+  font-family: "Sriracha", cursive;
+  font-size: 50px;
+  color: wheat;
+  margin: auto;
+}
+.rules p {
+  width: 50%;
+  margin-left: 25%;
+  font-size: 20px;
+}
+.Opponent-Selector {
+  border-radius: 90px;
+  grid-area: 2/2/3/3;
+  background-color: #242582;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  font-family: "Sriracha", cursive;
+  color: wheat;
+}
+
+.Opponent-Selector button {
+  background: transparent;
+  border: 0;
+  font-family: "Sriracha", cursive;
+  font-size: 40px;
+  color: wheat;
+}
+.Button-TheRandomizer {
+  text-align: center;
+  grid-area: 2/1/2/2;
+  background-color: #f64c72;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 20%;
+}
+.Button-TheStrategist {
+  text-align: center;
+  grid-area: 2/2/2/3;
+  background-color: #f64c72;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 20%;
+}
+.game-area {
+  border-radius: 90px;
+  grid-area: 2/2/3/3;
+  display: grid;
+  background-color: #242582;
+  grid-template-rows: 10% 1fr 30%;
+  grid-template-columns: 1fr 30% 30% 30% 1fr;
+}
+.game-area button {
+  background: transparent;
+  border: 0;
+  font-family: "Sriracha", cursive;
+  font-size: 4vh;
+  color: wheat;
+  margin: auto;
+}
+.Sticks {
+  text-align: center;
+  grid-area: 2/2/3/5;
+  font-family: "Sriracha", cursive;
+  color: wheat;
+}
+.Sticks h3 {
+  font-size: 5vh;
+}
+#Number {
+  margin-top: 10%;
+  font-size: 10vh;
+}
+.Turn {
+  grid-area: 1/3/2/4;
+  font-family: "Sriracha", cursive;
+  color: wheat;
+  text-align: center;
+  font-size: auto;
+}
+
+.Button-1 {
+  text-align: center;
+  grid-area: 3/2/4/3;
+  background-color: #f64c72;
+  border-radius: 50px;
+  padding: 40px;
+  margin: auto;
+}
+.Button-2 {
+  text-align: center;
+  grid-area: 3/3/4/4;
+  background-color: #f64c72;
+  border-radius: 50px;
+  padding: 40px;
+  margin: auto;
+}
+.Button-3 {
+  text-align: center;
+  grid-area: 3/4/4/5;
+  background-color: #f64c72;
+  border-radius: 50px;
+  padding: 40px;
+  margin: auto;
+}
+.Win {
+  border-radius: 90px;
+  grid-area: 2/2/3/3;
+  text-align: center;
+  font-size: 3vh;
+  background-color: #242582;
+  font-family: "Sriracha", cursive;
+  color: wheat;
+}
+.Lost {
+  border-radius: 90px;
+  grid-area: 2/2/3/3;
+  text-align: center;
+  font-size: 3vh;
+  background-color: #242582;
+  font-family: "Sriracha", cursive;
+  color: wheat;
+}
+.hidden {
+  display: none;
+}

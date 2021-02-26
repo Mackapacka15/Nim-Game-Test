@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="game.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nim</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">Welcome to Nim</a></h1>
+    </header>
+    <div class="Opponent-Selector">
+      <div class="Menu-Text">
+        <p>
+          <strong> Who do you wish to play?</strong><br />
+          The Randomizer is Medium and The Strategist is Verry Verry Hard
+        </p>
+      </div>
+      <div class="Button-TheRandomizer">
+        <label>
+          <button type="button" onclick="opponentRandom()">
+            The Randomizer
+          </button></label
+        >
+      </div>
+      <div class="Button-TheStrategist">
+        <label>
+          <button type="button" onclick="opponentStrategist()">
+            The Strategist
+          </button></label
+        >
+      </div>
+    </div>
+    <div class="hidden game-area">
+      <h3 class="Turn">Your Turn</h3>
+      <div class="Sticks">
+        <h3>Sticks left:</h3>
+        <p id="Number"></p>
+      </div>
+      <div class="Button-1">
+        <label>
+          <button type="button" onclick="playerTake1()">Take 1</button></label
+        >
+      </div>
+      <div class="Button-2">
+        <label>
+          <button type="button" onclick="playerTake2()">Take 2</button></label
+        >
+      </div>
+      <div class="Button-3">
+        <label>
+          <button type="button" onclick="playerTake3()">Take 3</button></label
+        >
+      </div>
+    </div>
+    <div class="hidden Win">
+      <h3>
+        You Won!! <br />
+        Press the headder to go back to the menu.
+      </h3>
+    </div>
+    <div class="hidden Lost">
+      <h3>You Lost. Press the headder to go back to the menu.</h3>
+    </div>
+    <footer></footer>
+  </body>
+</html>
